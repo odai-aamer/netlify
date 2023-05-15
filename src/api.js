@@ -1,19 +1,19 @@
 const express = require("express");
 const serverless = require("serverless-http");
 
-const productController = require('./controllers/product');
+// const productController = require('./controllers/product.js');
 
 const app = express();
 const router = express.Router();
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
-app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET, POST, PUT, PATCH, DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-  next();
-});
+// app.use((req, res, next) => {
+//   res.setHeader('Access-Control-Allow-Origin', '*');
+//   res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET, POST, PUT, PATCH, DELETE');
+//   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+//   next();
+// });
 
 router.get("/", (req, res) => {
   res.json({
