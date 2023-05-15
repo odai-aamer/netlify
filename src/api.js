@@ -22,17 +22,17 @@ router.get("/", (req, res) => {
 });
 
 // GET /products
-router.get('/products', productController.getProducts);
+// router.get('/products', productController.getProducts);
 
 // GET /creative-products
-router.get('/creative-products', productController.getProducts);
+// router.get('/creative-products', productController.getProducts);
 
 
 // POST /product
-router.post('/product', productController.createProduct);
+// router.post('/product', productController.createProduct);
 
 // POST /creative-product
-router.post('/creative-product', productController.createCreativeProduct);
+// router.post('/creative-product', productController.createCreativeProduct);
 
 app.use(`/.netlify/functions/api`, router);
 
